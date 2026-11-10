@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Andara Rent a Car · Alquiler de autos en Córdoba</title>
+  <meta name="description" content="Andara Rent a Car: alquiler de autos, SUV, camionetas y vehículos premium en Córdoba. Flota revisada, precios claros y atención personalizada.">
+  <meta name="theme-color" content="#0D1B2A">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+
+  <!-- Tipografías: Sora (títulos) + DM Sans (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Imagen principal precargada para que el hero aparezca rápido -->
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1920&q=75">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#flota">Saltar a la flota</a>
+
+  <!-- =========================================================
+       ENCABEZADO / NAVEGACIÓN
+       ========================================================= -->
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a class="brand" href="#inicio" aria-label="Andara Rent a Car, ir al inicio">
+        <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="16" fill="currentColor"/>
+          <path d="M18 50 L29 14 h6 L46 50" fill="none" stroke="#F4A62A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M32 26 v4 M32 36 v5" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <span class="brand__text">andara<small>rent a car</small></span>
+      </a>
+
+      <nav class="nav__menu" id="nav-menu" aria-label="Principal">
+        <ul>
+          <li><a href="#inicio" class="nav__link">Inicio</a></li>
+          <li><a href="#nosotros" class="nav__link">Quiénes somos</a></li>
+          <li><a href="#flota" class="nav__link">Flota</a></li>
+          <li><a href="#ventajas" class="nav__link">Ventajas</a></li>
+          <li><a href="#como-funciona" class="nav__link">Cómo funciona</a></li>
+          <li><a href="#contacto" class="nav__link">Contacto</a></li>
+        </ul>
+        <a href="#contacto" class="btn btn--accent nav__cta">Reservar</a>
+      </nav>
+
+      <button class="nav__toggle" type="button" aria-controls="nav-menu" aria-expanded="false" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- =========================================================
+         HERO
+         ========================================================= -->
+    <section class="hero" id="inicio">
+      <div class="hero__media" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <p class="eyebrow eyebrow--light">Alquiler de autos en Córdoba · desde 2013</p>
+        <h1 class="hero__title">Tu viaje, <span>sin vueltas.</span></h1>
+        <p class="hero__lead">
+          Autos, SUV y camionetas revisados antes de cada entrega, con precios claros
+          y una persona real que te atiende de principio a fin. Elegí el vehículo, coordinamos el resto.
+        </p>
+        <div class="hero__actions">
+          <a href="#flota" class="btn btn--accent btn--lg">
+            Ver nuestra flota <i data-lucide="arrow-right" aria-hidden="true"></i>
+          </a>
+          <a href="#contacto" class="btn btn--ghost btn--lg">Contactanos</a>
+        </div>
+
+        <ul class="hero__facts">
+          <li><strong>+12</strong><span>años en la ruta</span></li>
+          <li><strong>40</strong><span>vehículos en flota</span></li>
+          <li><strong>24 h</strong><span>asistencia en viaje</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         QUIÉNES SOMOS
+         ========================================================= -->
+    <section class="section about" id="nosotros">
+      <div class="container about__grid">
+        <div class="about__media reveal">
+          <img class="about__img about__img--main"
+               src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=900&q=75"
+               alt="Conductor manejando al atardecer por la ciudad" loading="lazy" width="900" height="1100">
+          <img class="about__img about__img--small"
+               src="https://images.unsplash.com/photo-1486006920555-c77dcf18193c?auto=format&fit=crop&w=600&q=75"
+               alt="Vehículo en el taller durante una revisión técnica" loading="lazy" width="600" height="600">
+          <div class="about__badge">
+            <strong>4.800+</strong>
+            <span>viajes entregados</span>
+          </div>
+        </div>
+
+        <div class="about__text reveal">
+          <p class="eyebrow">Quiénes somos</p>
+          <h2 class="section__title">Una empresa cordobesa que creció de boca en boca.</h2>
+          <p>
+            Andara nació en 2013 con tres autos y una oficina chica en Nueva Córdoba. Los primeros
+            clientes eran turistas que llegaban a recorrer las Sierras y no querían sorpresas
+            en el mostrador. Esa sigue siendo nuestra forma de trabajar: lo que te cotizamos es lo que pagás.
+          </p>
+          <p>
+            Hoy contamos con una flota de 40 vehículos y un equipo propio de mantenimiento,
+            pero seguimos atendiendo como el primer día: cada reserva tiene un responsable con nombre y apellido.
+          </p>
+
+          <div class="mission">
+            <i data-lucide="compass" aria-hidden="true"></i>
+            <p><strong>Nuestra misión:</strong> que alquilar un auto sea la parte más simple de tu viaje,
+              con vehículos seguros, condiciones transparentes y acompañamiento real.</p>
+          </div>
+
+          <ul class="values">
+            <li><i data-lucide="shield-check" aria-hidden="true"></i>Seguridad</li>
+            <li><i data-lucide="armchair" aria-hidden="true"></i>Comodidad</li>
+            <li><i data-lucide="user-round-check" aria-hidden="true"></i>Atención personalizada</li>
+            <li><i data-lucide="file-check-2" aria-hidden="true"></i>Transparencia</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         NUESTRA FLOTA (las tarjetas se generan desde js/main.js)
+         ========================================================= -->
+    <section class="section fleet" id="flota">
+      <div class="container">
+        <div class="section__head reveal">
+          <div>
+            <p class="eyebrow">Nuestra flota</p>
+            <h2 class="section__title">Elegí el vehículo para tu próximo viaje.</h2>
+          </div>
+          <p class="section__intro">
+            Todos los vehículos incluyen seguro con cobertura total, kilometraje libre dentro
+            de la provincia y revisión técnica antes de cada entrega.
+          </p>
+        </div>
+
+        <div class="filters reveal" role="group" aria-label="Filtrar por categoría">
+          <button class="filter is-active" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+          <button class="filter" type="button" data-filter="Económico" aria-pressed="false">Económicos</button>
+          <button class="filter" type="button" data-filter="Sedán" aria-pressed="false">Sedanes</button>
+          <button class="filter" type="button" data-filter="SUV" aria-pressed="false">SUV</button>
+          <button class="filter" type="button" data-filter="Camioneta" aria-pressed="false">Camionetas</button>
+          <button class="filter" type="button" data-filter="Premium" aria-pressed="false">Premium</button>
+        </div>
+
+        <div class="fleet__grid" id="fleet-grid" aria-live="polite">
+          <noscript><p>Activá JavaScript para ver la flota o escribinos por WhatsApp al +54 9 351 555-0123.</p></noscript>
+        </div>
+
+        <p class="fleet__note">
+          <i data-lucide="info" aria-hidden="true"></i>
+          Precios estimativos por día en pesos argentinos, con IVA incluido. Varían según temporada,
+          duración del alquiler y disponibilidad. Te confirmamos el valor final al consultar.
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         VENTAJAS
+         ========================================================= -->
+    <section class="section benefits" id="ventajas">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <p class="eyebrow eyebrow--light">Por qué elegirnos</p>
+          <h2 class="section__title">Alquilar con Andara es simple, y se nota.</h2>
+        </div>
+
+        <div class="benefits__grid">
+          <article class="benefit reveal">
+            <span class="benefit__icon"><i data-lucide="headset" aria-hidden="true"></i></span>
+            <h3>Atención personalizada</h3>
+            <p>Un asesor te acompaña desde la consulta hasta la devolución. Sin contestadores ni tickets.</p>
+          </article>
+          <article class="benefit reveal">
+            <span class="benefit__icon"><i data-lucide="wrench" aria-hidden="true"></i></span>
+            <h3>Vehículos revisados</h3>
+            <p>Control de 35 puntos, limpieza profunda y service al día antes de cada entrega.</p>
+          </article>
+          <article class="benefit reveal">
+            <span class="benefit__icon"><i data-lucide="badge-dollar-sign" aria-hidden="true"></i></span>
+            <h3>Precios competitivos</h3>
+            <p>Tarifas claras con seguro incluido. Lo que te cotizamos es lo que pagás.</p>
+          </article>
+          <article class="benefit reveal">
+            <span class="benefit__icon"><i data-lucide="map-pin-check" aria-hidden="true"></i></span>
+            <h3>Entrega flexible</h3>
+            <p>Retirá y devolvé en nuestra oficina, el aeropuerto o tu hotel, en el horario que te quede cómodo.</p>
+          </article>
+          <article class="benefit reveal">
+            <span class="benefit__icon"><i data-lucide="life-buoy" aria-hidden="true"></i></span>
+            <h3>Asistencia 24 h</h3>
+            <p>Auxilio mecánico y reemplazo del vehículo en toda la provincia, cualquier día del año.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         CÓMO FUNCIONA
+         ========================================================= -->
+    <section class="section steps" id="como-funciona">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <p class="eyebrow">Cómo funciona</p>
+          <h2 class="section__title">De la consulta a la ruta en cuatro pasos.</h2>
+        </div>
+
+        <ol class="steps__list">
+          <li class="step reveal">
+            <span class="step__num">01</span>
+            <i data-lucide="car-front" aria-hidden="true"></i>
+            <h3>Elegí tu vehículo</h3>
+            <p>Recorré la flota y quedate con el que mejor se adapte a tu viaje y a tu grupo.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">02</span>
+            <i data-lucide="calendar-search" aria-hidden="true"></i>
+            <h3>Consultá disponibilidad</h3>
+            <p>Escribinos por WhatsApp o desde el formulario con las fechas que tenés en mente.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">03</span>
+            <i data-lucide="clipboard-check" aria-hidden="true"></i>
+            <h3>Coordiná la reserva</h3>
+            <p>Te confirmamos precio final, lugar de entrega y la documentación necesaria.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">04</span>
+            <i data-lucide="key-round" aria-hidden="true"></i>
+            <h3>Retirá y disfrutá</h3>
+            <p>Te entregamos las llaves con el tanque lleno. Lo único que queda es manejar.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         CONTACTO
+         ========================================================= -->
+    <section class="section contact" id="contacto">
+      <div class="container contact__grid">
+
+        <div class="contact__info reveal">
+          <p class="eyebrow">Contacto</p>
+          <h2 class="section__title">Hablemos de tu próximo viaje.</h2>
+          <p class="section__intro">Respondemos todas las consultas en menos de una hora dentro del horario de atención.</p>
+
+          <ul class="contact__list">
+            <li>
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+              <div><span>Dirección</span>Av. Hipólito Yrigoyen 1180, Nueva Córdoba, Córdoba</div>
+            </li>
+            <li>
+              <i data-lucide="phone" aria-hidden="true"></i>
+              <div><span>Teléfono</span><a href="tel:+543515550123">(0351) 555-0123</a></div>
+            </li>
+            <li>
+              <i data-lucide="message-circle" aria-hidden="true"></i>
+              <div><span>WhatsApp</span><a href="#" data-whatsapp>+54 9 351 555-0123</a></div>
+            </li>
+            <li>
+              <i data-lucide="mail" aria-hidden="true"></i>
+              <div><span>Correo</span><a href="mailto:reservas@andararentacar.com.ar">reservas@andararentacar.com.ar</a></div>
+            </li>
+            <li>
+              <i data-lucide="clock-3" aria-hidden="true"></i>
+              <div><span>Horarios</span>Lun a vie 8 a 20 h · Sáb 9 a 14 h<br>Entregas en aeropuerto todos los días</div>
+            </li>
+          </ul>
+
+          <div class="map">
+            <iframe
+              title="Ubicación de Andara Rent a Car en Nueva Córdoba"
+              src="https://www.google.com/maps?q=Nueva+C%C3%B3rdoba,+C%C3%B3rdoba,+Argentina&z=15&output=embed"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <!-- Formulario: no envía datos a ningún servidor; arma un mensaje y abre WhatsApp -->
+        <form class="form reveal" id="contact-form" novalidate>
+          <h3 class="form__title">Consultá disponibilidad</h3>
+          <p class="form__hint">Completá tus datos y te abrimos WhatsApp con la consulta lista para enviar.</p>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="f-name">Nombre y apellido</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Ej.: Lucía Fernández" required>
+              <small class="field__error" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="f-email">Correo electrónico</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" placeholder="tu@correo.com" required>
+              <small class="field__error" aria-live="polite"></small>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="f-phone">Teléfono</label>
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="351 555 0000" required>
+              <small class="field__error" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="f-date">Fecha estimada de alquiler</label>
+              <input id="f-date" name="date" type="date" required>
+              <small class="field__error" aria-live="polite"></small>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="f-vehicle">Vehículo de interés</label>
+            <select id="f-vehicle" name="vehicle" required>
+              <option value="">Seleccioná un vehículo</option>
+              <option value="Todavía no lo decidí">Todavía no lo decidí</option>
+            </select>
+            <small class="field__error" aria-live="polite"></small>
+          </div>
+
+          <div class="field">
+            <label for="f-message">Mensaje</label>
+            <textarea id="f-message" name="message" rows="4" placeholder="Contanos cuántos días necesitás y dónde querés retirar el vehículo." required></textarea>
+            <small class="field__error" aria-live="polite"></small>
+          </div>
+
+          <button type="submit" class="btn btn--whatsapp btn--block btn--lg">
+            <i data-lucide="send" aria-hidden="true"></i> Enviar consulta por WhatsApp
+          </button>
+          <p class="form__privacy">
+            <i data-lucide="lock" aria-hidden="true"></i>
+            Este formulario no guarda tus datos: solo prepara el mensaje para que lo envíes vos desde WhatsApp.
+          </p>
+          <p class="form__status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       PIE DE PÁGINA
+       ========================================================= -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a class="brand brand--light" href="#inicio" aria-label="Andara Rent a Car, volver al inicio">
+          <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="16" fill="#16304A"/>
+            <path d="M18 50 L29 14 h6 L46 50" fill="none" stroke="#F4A62A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M32 26 v4 M32 36 v5" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+          <span class="brand__text">andara<small>rent a car</small></span>
+        </a>
+        <p class="footer__tagline">Tu viaje, sin vueltas. Alquiler de vehículos en Córdoba desde 2013.</p>
+      </div>
+      <nav aria-label="Secciones">
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="#nosotros">Quiénes somos</a></li>
+          <li><a href="#flota">Flota</a></li>
+          <li><a href="#como-funciona">Cómo funciona</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="tel:+543515550123">(0351) 555-0123</a></li>
+          <li><a href="mailto:reservas@andararentacar.com.ar">reservas@andararentacar.com.ar</a></li>
+          <li>Av. Hipólito Yrigoyen 1180, Córdoba</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> Andara Rent a Car. Sitio de demostración: empresa y datos ficticios.</p>
+      <p>Fotografías: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a class="wa-float" href="#" data-whatsapp target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.04 3C8.86 3 3.04 8.8 3.04 15.96c0 2.28.6 4.5 1.74 6.46L3 29l6.76-1.76a13 13 0 0 0 6.28 1.6h.01c7.17 0 13-5.8 13-12.96C29.05 8.8 23.21 3 16.04 3Zm0 23.66h-.01a10.8 10.8 0 0 1-5.5-1.5l-.4-.23-4.01 1.04 1.07-3.9-.26-.4a10.7 10.7 0 0 1-1.65-5.71c0-5.95 4.85-10.79 10.81-10.79 2.89 0 5.6 1.12 7.64 3.16a10.7 10.7 0 0 1 3.16 7.63c0 5.95-4.85 10.7-10.85 10.7Zm5.93-8.07c-.33-.16-1.93-.95-2.23-1.06-.3-.11-.52-.16-.73.17-.22.32-.84 1.05-1.03 1.27-.19.22-.38.24-.7.08-.33-.16-1.38-.5-2.62-1.6a9.8 9.8 0 0 1-1.82-2.25c-.19-.32-.02-.5.14-.66.15-.14.33-.38.49-.57.16-.19.22-.32.33-.54.1-.22.05-.4-.03-.57-.08-.16-.73-1.75-1-2.4-.26-.63-.53-.54-.73-.55h-.62c-.22 0-.57.08-.87.4-.3.33-1.14 1.11-1.14 2.7 0 1.6 1.17 3.13 1.33 3.35.16.22 2.3 3.5 5.56 4.9.78.34 1.38.54 1.86.69.78.25 1.49.21 2.05.13.63-.1 1.93-.79 2.2-1.55.27-.76.27-1.41.19-1.55-.08-.14-.3-.22-.62-.38Z"/></svg>
+  </a>
+
+  <!-- Íconos Lucide (versión fija) y lógica propia -->
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

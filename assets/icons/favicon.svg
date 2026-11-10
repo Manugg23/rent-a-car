@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Isotipo Andara: una "A" formada por una ruta que se pierde en el horizonte -->
+  <rect width="64" height="64" rx="16" fill="#0D1B2A"/>
+  <path d="M18 50 L29 14 h6 L46 50" fill="none" stroke="#F4A62A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M32 26 v4 M32 36 v5" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+</svg>
